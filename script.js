@@ -13,3 +13,5 @@ function Person(firstName, lastName, age, gender, isNice) {
         }
     }
 }
+
+var Melanie
