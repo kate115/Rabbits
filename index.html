@@ -11,5 +11,14 @@
             <p>Welcome! This is Rabbit Land! Use this webpage to learn about Rabbits!</p>
             <!-- Link -->
             <a href="Food.html">Food</a>
+            <p>Loading content from the API: <b id="name">...</b></p>
+
+            <script>
+                (async function() {
+                    const { text } = await( await fetch(`/api/TestAPI`)).json();
+                    document.querySelector('#name').textContent = text;
+                }())
+                </script>
+
         </body>
     </html>
